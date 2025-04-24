@@ -6,5 +6,5 @@ from django.conf import settings
 def api_root(request):
     return JsonResponse({
         "message": "Welcome to the OctoFit API!",
-        "url": f"https://miniature-eureka-pjxwr5969v539p6q-8000.app.github.dev",
+        "url": "https://miniature-eureka-pjxwr5969v539p6q-8000.app.github.dev",
     })
