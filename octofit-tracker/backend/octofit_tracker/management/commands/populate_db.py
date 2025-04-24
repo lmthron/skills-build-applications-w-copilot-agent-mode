@@ -16,11 +16,11 @@ class Command(BaseCommand):
     def handle(self, *args, **kwargs):
         print('populate_db command loaded')
         print('Python path:', sys.path)
-        # Create test users
+        # Adding test data for users
         user1 = User.objects.create(email='john.doe@example.com', name='John Doe', age=30)
         user2 = User.objects.create(email='jane.smith@example.com', name='Jane Smith', age=25)
 
-        # Create test teams
+        # Adding test data for teams
         team1 = Team.objects.create(name='Team Alpha')
         team2 = Team.objects.create(name='Team Beta')
 
@@ -28,15 +28,15 @@ class Command(BaseCommand):
         team1.members.add(user1)
         team2.members.add(user2)
 
-        # Create test activities
+        # Adding test data for activities
         Activity.objects.create(user=user1, activity_type='Running', duration=30, date='2025-04-22')
         Activity.objects.create(user=user2, activity_type='Cycling', duration=45, date='2025-04-22')
 
-        # Create test leaderboard entries
+        # Adding test data for leaderboard
         Leaderboard.objects.create(team=team1, points=100)
         Leaderboard.objects.create(team=team2, points=150)
 
-        # Create test workouts
+        # Adding test data for workouts
         Workout.objects.create(name='Morning Yoga', description='A relaxing yoga session', duration=60)
         Workout.objects.create(name='HIIT Training', description='High-intensity interval training', duration=30)
 
