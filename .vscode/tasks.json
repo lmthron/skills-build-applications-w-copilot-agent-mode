@@ -1,0 +1,10 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"command": "mkdir -p octofit-tracker/frontend && npx create-react-app .",
+			"label": "Setup React App",
+			"type": "shell"
+		}
+	]
+}
