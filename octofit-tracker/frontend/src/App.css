@@ -1,0 +1,61 @@
+body {
+  background-color: #f0f8ff; /* Light blue background */
+  color: #333; /* Dark text color */
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: #ffdd57; /* Yellow hover color */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #007bff; /* Bootstrap primary color */
+}
+
+table {
+  background-color: #ffffff; /* White table background */
+  border: 1px solid #ddd;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table th {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+}
+
+button {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 10px;
+}
